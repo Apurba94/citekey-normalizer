@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "citekey-normalizer"
+version = "0.1.0"
+description = "Rewrite BibTeX citation keys to a consistent AuthorYearWord scheme and update .tex files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+citekey-normalizer = "citekey_normalizer.cli:main"
+
+[tool.setuptools]
+packages = ["citekey_normalizer"]
